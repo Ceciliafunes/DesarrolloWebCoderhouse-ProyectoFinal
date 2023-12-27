@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .navbar .barranav {
+    
+    background: rgba(40, 119, 119, 0.30);
+    position: fixed;
+    padding-top: 8.25rem;
+}
+
+@media (max-width: 1024px){
+    header .navbar .barranav {
+        padding-top: 20rem;
+    }
+    .botonBuscar {
+        width: fit-content;
+    }
+}
+
+header nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-align: none;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 .7375rem;
+    padding: .1875rem;
+    transition: .5s;
+
+}
+
+.navbar li a:hover{
+    color: #1CB698;
+}
+
+.logo img {
+    width: 6rem;
+    border-radius: 16.375rem;
+    
+}
+
+/*SECTION INICIO*/
+
+.contenedor-inicio {
+    background-color: #E8FFF3;
+}
+
+.galeriaFotos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.galeriaFotos img {
+    width: 20%;
+}
+
+.galeriaFotos img {
+    gap: .3125rem;
+    overflow: hidden;
+    border-radius: .3125rem;
+    box-shadow: .3125rem .5rem .75rem #E8E884 ;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.galeriaFotos img:hover {
+    transform: scale(1.2);
+}
+
+.contenedor-inicio h1 {
+    color: #2F4858;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 12.5rem;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: .125rem .125rem .3125rem  #183D3D ;
+}
+
+.contenedor-inicio h2 {
+    color: #2F4858;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: .125rem .125rem .3125rem  #183D3D ;
+}
+
+
+/*SECTION PRODUCTOS*/
+
+.productos {
+    color: #2F4858;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;    
+    padding-top: 12.5rem;
+    padding-bottom: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: .125rem .125rem .3125rem  #183D3D;
+}
+
+.contenedorProductos {
+    width: 100%;
+    display: grid;
+    column-gap: 1.5125rem;
+    row-gap: 3.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 2.25rem;
+}
+.contenedorProductos .galeriaProductos {
+    row-gap: 2.5rem;
+}
+
+@media (max-width:1024px){
+    .contenedorProductos .galeriaProductos {
+        column-gap: 1.5rem;
+        justify-content: center;
+    }
+}
+
+.cards{
+    background-color: white;
+    text-align: center;
+    box-shadow: .3125rem .5rem .75rem #E8E884 ;
+    border-radius: .625rem;
+    overflow: hidden;
+    
+}
+
+.contenedorProductos .row .cards:hover{
+    background-color: #CDFBE4;
+    transition: 1s ;
+
+}
+
+.imgProductos {
+    width: 19.5rem;
+    border-radius: .625rem;
+}
+.imgProductos img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedorProductos .cards .precio {
+    color: #4BE225;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: bold;
+}
+.contenedorProductos .cards p {
+    font-family: sans-serif;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/*SECTION TRAMICHI TIPS*/
+
+.tramichitips {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #2F4858;
+    font-size: 3rem;
+    text-align: center;    
+    padding-top: 12.5rem;
+    padding-bottom: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: .125rem .125rem .3125rem  #183D3D;
+}
+
+.tituloTips {
+    color: #4BE225;
+    font-size: 2.1875rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: .125rem .125rem .3125rem #4BE225;
+    text-transform: capitalize;
+    
+}
+
+.armadoMate ol{
+    border-color: #183D3D;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: 300;   
+    padding: 1.625rem;
+    align-items: center;
+
+}
+
+.armadoMate li {
+    padding-top: 1.25rem;
+}
+
+.imgtramichitips {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgtramichitips img {
+    width: 50%;
+    overflow: hidden;
+    border-radius: .3125rem;
+    box-shadow: .3125rem .5rem .75rem #E8E884 ;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+
+
+.tituloTipsCurado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.25rem;
+    color: #4BE225;
+    font-size: 2.1875rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: .125rem .125rem .3125rem #4BE225;
+    text-transform: capitalize;
+    
+    
+}
+
+.curadoMate ol {
+    border-color: #183D3D;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: 300;
+    padding-top: 1.625rem;
+    align-items: center;
+}
+.curadoMate li {
+    padding-top: 1.25rem;
+}
+
+.videito {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.25rem;
+}
+
+.videito iframe {
+    width: 50%;
+    overflow: hidden;
+    border-radius: .3125rem;
+    box-shadow: .3125rem .5rem .75rem #E8E884 ;
+    object-fit: cover;
+}
+
+/*SECTION MAYORISTAS */
+
+.mayoristas {
+    color: #2F4858;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;    
+    padding-top: 12.5rem;
+    padding-bottom: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: .125rem .125rem .3125rem  #183D3D;
+}
+
+.tituloMayorista {
+    color: rgb(75, 185, 222);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+
+}
+
+.infoMayorista {
+    color: black;
+    text-align: center;
+    font-size: 2.1875rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 3.125rem 3.125rem 3.125rem 3.125rem;
+}
+
+.infoMayorista div {
+    row-gap: 3.125rem;
+    box-shadow: .75rem .75rem .75rem .75rem rgb(75, 185, 222); ;
+}
+
+.infoMayorista p {
+    padding-top: 1.25rem;
+    text-align: center;
+}
+
+.enviosMayorista {
+    background-color: rgb(189, 188, 188);
+}
+
+.enviosMayorista h3 {
+    font-size: bold ;
+    text-align: center;
+    padding: .9375rem;
+}
+
+.enviosMayorista .imgcamion {
+    padding-left: 1.25rem
+}
+
+.mapita {
+    padding-top: 1.25rem ;
+    overflow: hidden;
+}
+
+.mapita h4 {
+    color: rgb(75, 185, 222);
+    font-size: 2rem ;
+    font-weight: bold;
+    
+}
+
+.flecha {
+    width: 10%;
+}
+.flecha img {
+    object-fit: cover;
+}
+
+.mapita {
+    justify-content: center;
+}
+
+.enviosMayorista img {
+    width: 6.2520rem;
+}
+
+
+
+/*SECTION CONTACTO*/
+
+.contacto {
+    color: #2F4858;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;    
+    padding-top: 12.5rem;
+    padding-bottom: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: .125rem .125rem .3125rem  #183D3D;
+}
+
+.seccionContacto {
+    background: #1e2326;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.tituloContacto {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+}
+.seccionContacto h4 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formularioContacto {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+}
+
+.formularioContacto label {
+    display: flex;
+    justify-content: left;
+    
+}
+
+.formularioContacto input, .formularioContacto textarea {
+    text-align: left;
+    width: 100%;
+    padding: 1.125rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.seccionContacto .botonEnviar {
+    cursor: pointer;
+    border: .125rem solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 1.25rem auto;
+    padding: .625rem 6.25rem;
+    font-size: 1rem;
+    color: #fff;
+    
+    z-index: 10;
+}
+
+.seccionContacto .botonEnviar:hover {
+    background-color: #1CB698;
+    transition: 1s;
+}
+
+footer {
+    width: 100%;
+    background-color: #CDFBE4;
+    padding: 2.25rem 1.25rem;
+}
+.parrafoFooter {
+    color: #208C64;
+    font-size: 1.875rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .6125rem;
+
+}
+
+.redes a img {
+    width: 1.25rem;
+}
+
+
+/* boton de whatsapp*/
+
+.float{
+	position:fixed;
+	width:3.75rem;
+	height:3.75rem;
+	bottom:2.5rem;
+	right:2.5rem;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:3.125rem;
+	text-align:center;
+    font-size: 1.875rem;
+	box-shadow: .125rem .125rem .1875rem #999;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+}
+
+.my-float{
+	margin-top:1rem;
+}
+
