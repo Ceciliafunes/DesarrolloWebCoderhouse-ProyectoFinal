@@ -8,12 +8,12 @@ header .navbar .barranav {
     
     background: rgba(40, 119, 119, 0.30);
     position: fixed;
-    padding-top: 8.25rem;
+    top: 0;
 }
 
 @media (max-width: 1024px){
     header .navbar .barranav {
-        padding-top: 20rem;
+        top: 0;
     }
     .botonBuscar {
         width: fit-content;
