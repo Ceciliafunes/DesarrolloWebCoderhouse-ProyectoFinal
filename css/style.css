@@ -7,14 +7,13 @@ header nav ul {
     display: flex;
     list-style: none; }
 header nav ul li a {
-    text-align: none;
     color: black;
-    text-decoration: none;
+    text-align: none;
     font-weight: bold;
-    margin: 0 .7375rem;
+    text-decoration: none;
     padding: .1875rem;
+    margin: 0 .7375rem;
     transition: .5s; }
-
 header .navbar .barranav {
     background-color: rgba(40, 119, 119, 0.3);
     position: fixed;
@@ -76,6 +75,7 @@ header .navbar .barranav {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-shadow: .125rem .125rem .3125rem  #183D3D;
+    height: auto;
     width: 100%; }
 
 .contenedorProductos {
@@ -144,7 +144,7 @@ header .navbar .barranav {
     padding-top: 1.25rem; }
 
 .imgtramichitips, .videito {
-    width: 100%;  
+    width: 100%;
     display: flex;
     justify-content: center; }
 .imgtramichitips img, .videito img {
@@ -309,7 +309,7 @@ footer {
         column-gap: 1.5rem;
         justify-content: center; } }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
     @keyframes animacion {
         0% {
             background-color: #E8FFF3;
