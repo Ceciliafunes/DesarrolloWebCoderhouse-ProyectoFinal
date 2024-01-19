@@ -1,0 +1,22 @@
+/*IMPORT UTILITIES*/
+
+@import"./utilities/functions";
+@import"./utilities/maps";
+@import"./utilities/mixins";
+@import"./utilities/variables";
+
+//*import layout/*/
+
+@import"./layout/header";
+@import"./layout/main";
+@import"./layout/footer";
+@import"./layout/media/media1024";
+@import "./layout/media/media320";
+
+//*import base*/
+
+@import"./base/reset";
+
+@import "./componentes/cards";
+@import "./componentes/bootstrap";
+

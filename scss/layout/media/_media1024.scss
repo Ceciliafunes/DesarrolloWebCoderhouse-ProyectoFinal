@@ -1,0 +1,13 @@
+@media (max-width: 1024px){
+    header .navbar .barranav {
+        top: 0;
+    }
+    .botonBuscar {
+        width: fit-content;}
+
+    .contenedorProductos .galeriaProductos {
+        column-gap: 1.5rem;
+        justify-content: center;
+    }
+    
+};

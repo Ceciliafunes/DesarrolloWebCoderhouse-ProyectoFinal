@@ -1,0 +1,308 @@
+/*seccion inicio*/
+.contenedor-inicio {
+    background-color: $BackgroundSecundario;
+}
+
+.galeriaFotos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.galeriaFotos img {
+    width: 20%;
+}
+
+.galeriaFotos img {
+    gap: .3125rem;
+    overflow: hidden;
+    border-radius: .3125rem;
+    box-shadow: .3125rem .5rem .75rem #E8E884 ;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.galeriaFotos img:hover {
+    transform: scale(1.2);
+}
+
+.contenedor-inicio .tituloppal {
+    color: map-get($colores, tit);
+    font-size: map-get($font-sizes, 1 );
+    text-align: center;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: .125rem .125rem .3125rem  #183D3D ;
+}
+
+.contenedor-inicio h2 {
+    @extend .tituloppal;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+
+
+}
+
+/*SECTION PRODUCTOS*/
+
+.productos {
+    color: map-get($colores, tit );
+    font-size: map-get($font-sizes, 1 );
+    text-align: center;    
+    padding-top: 8rem;
+    padding-bottom: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: .125rem .125rem .3125rem  #183D3D;
+    @include sizes (100%, auto );
+}
+
+.contenedorProductos {
+    width: 100%;
+    display: grid;
+    column-gap: 1.5125rem;
+    row-gap: 3.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 2.25rem;
+}
+.contenedorProductos .galeriaProductos {
+    row-gap: 2.5rem;
+}
+
+.contenedorProductos .row .cards:hover{
+    background-color: #CDFBE4;
+    transition: 1s ;
+
+}
+
+.imgProductos {
+    width: 19.5rem;
+    border-radius: .625rem;
+    img {
+    width: 100%;
+    object-fit: cover;
+    }
+}
+
+.contenedorProductos {
+    .cards {
+        .precio {
+            color: map-get($colores, precioytips );
+            font-size: map-get($font-sizes, parr );
+            font-style: normal;
+            font-weight: bold;
+
+        p {
+            font-family: sans-serif;
+            color: map-get($colores, nav );
+            font-style: normal;
+            font-weight: bold;
+            }
+        }
+    }
+}
+.contenedorProductos .precio:hover {
+    transform: scale(1.2);
+}
+/*SECTION TRAMICHITIPS*/
+
+.tramichitips {
+    display: flex;
+    justify-content: center;
+    @extend .productos;
+    @include sizes (100%, auto);
+    
+}
+.tituloTips {
+    color: map-get($colores, precioytips );
+    font-size: map-get($font-sizes, 2 );
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: .125rem .125rem .3125rem #4be225;
+    text-transform: capitalize;
+}
+
+.tituloTipsCurado {
+    @extend .tituloTips;
+    padding-top: 2rem;
+}
+
+.armadoMate {
+    ol {
+        border-color: $BorderCards;
+        text-align: center;
+        font-size: map-get($font-sizes, item );
+        font-weight: 300;
+        padding: 1.625rem;
+        align-items: center;
+        li {
+        padding-top: 1.25rem;
+        }
+    }
+}
+
+.curadoMate {
+    @extend .armadoMate;
+
+}
+
+.imgtramichitips {
+    width: 100%;
+    @include flex (flex, center);
+    img {
+        width: 50%;
+        overflow: hidden;
+        border-radius: .3125rem;
+        box-shadow: .3125rem .5rem .75rem #E8E884;
+        transition: 0.5s;
+        object-fit: cover;
+    }
+}
+
+.videito {
+    @extend .imgtramichitips;
+    padding-bottom: 1.25rem;
+}
+
+/*SECCION MAYORISTAS*/
+
+.mayoristas {
+    @extend .productos;
+    width: 100%;
+}
+.infoMayorista {
+    background-color: $BackgroundCard;
+    box-shadow: .3125rem .5rem .75rem #E8E884;
+}
+
+.infoMayorista:hover{
+    transform: scale(1.2);
+}
+
+.mapita {
+    padding-top: 1.25rem;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.tituloMayorista {
+    color: map-get($colores, precioytips );
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: map-get($font-sizes, 3 );
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: map-get($font-sizes, 3 );
+}
+.flecha {
+    @include sizes (10%, 10%);
+    img {
+        object-fit: cover;
+    }
+}
+
+.masInfo {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-shadow: .125rem .125rem .3125rem #4be225;
+}
+
+.enviosMayorista {
+    background-color: $BackgroundSecundario;
+    text-align: center;
+    font-weight: bold ;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .9375rem;
+    text-shadow: .125rem .125rem .3125rem yellow;
+    .imgcamion {
+        padding-left: 1.25rem;
+    }
+}
+
+.enviosMayorista img {
+    width: 4.2520rem;
+}
+.enviosMayorista {
+    animation-name: animacion;
+    animation-duration: 5s ;
+    position: relative;
+    animation-timing-function: linear;  
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animacion {
+    0% {background-color: $BackgroundSecundario; left: 0;}
+    50%{background-color: #E8E884; left: 18.75rem;}
+    100% {background-color: $BackgroundSecundario; right: 0;}
+
+}
+
+/*SECCION CONTACTO*/
+
+.contacto {
+    @extend .productos;
+    width: 100%;
+}
+
+.seccionContacto {
+    background: $BackgroundForm ;
+    color: map-get($colores, contacto );
+    font-family: Arial, Helvetica, sans-serif;
+    h4 {
+        text-align: center;
+        color: map-get($colores, contacto );
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.formularioContacto {
+    background: $BackgroundForm;
+    @include flex (flex, center);
+    padding-top: 2.5rem;
+}
+.formularioContacto label {
+    @include flex (flex, left);
+}
+.formularioContacto input, .formularioContacto textarea {
+    text-align: left;
+    width: 100%;
+    padding: 1.125rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    background-color: $BackgroundForm;
+    color: #fff;
+    font-size: map-get($font-sizes, formcontacto );
+}
+
+.tituloContacto {
+    @extend .tituloMayorista;
+    color: map-get($colores, contacto );
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+}
+
+.seccionContacto {
+    .botonEnviar {
+        cursor: pointer;
+        border: .125rem solid #fff;
+        width: fit-content;
+        display: block;
+        margin: 1.25rem auto;
+        padding: .625rem 6.25rem;
+        font-size: map-get($font-sizes, boton );
+        color: #fff;
+        z-index: 10;
+    }
+}
+
+.seccionContacto .botonEnviar:hover {
+    background-color: #1CB698;
+    transition: 1s;
+}

@@ -1,0 +1,10 @@
+@media (max-width: 320px) {
+    @keyframes animacion {
+        0% {background-color: $BackgroundSecundario; left: 0;}
+        50%{background-color: #E8E884; left: 0;}
+        100% {background-color: $BackgroundSecundario; right: 0;}
+    }
+    .infoMayorista:hover{
+        transform: scale(1);
+    }
+}

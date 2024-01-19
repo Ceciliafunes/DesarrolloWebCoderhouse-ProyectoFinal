@@ -1,0 +1,37 @@
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            display: flex;
+            list-style: none;
+            li a {
+                text-align: none;
+                color: map-get($colores,nav);
+                text-decoration: none;
+                font-weight: bold;
+                margin: 0 .7375rem;
+                padding: .1875rem;
+                transition: .5s;
+            }
+        }
+    }
+}
+header .navbar .barranav {
+    background-color: $BackgroundPrincipal;
+    position: fixed;
+    top: 0;
+}
+
+.navbar li a:hover{
+    color: #1CB698;
+}
+
+.logo img {
+    width: 6rem;
+    border-radius: 16.375rem;
+    
+}
+
+
