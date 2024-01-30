@@ -110,8 +110,6 @@
 }
 /*SECTION TRAMICHITIPS*/
 
-
-
 .tramichitips {
     display: flex;
     justify-content: center;
@@ -120,7 +118,7 @@
     
 }
 .tituloTips {
-    color: map-get($colores, precioytips );
+    color: map-get($colores, nav );
     font-size: map-get($font-sizes, 2 );
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -135,7 +133,11 @@
 }
 
 .armadoMate {
+    background: $BackgroundPrincipal;
+    border-radius: 2%;
+    padding: 1rem 1.2rem 1rem 1.2rem;
     ol {
+        color: map-get($colores, nav );
         border-color: $BorderCards;
         text-align: center;
         font-size: map-get($font-sizes, item );

@@ -10,7 +10,7 @@ header nav ul {
 }
 header nav ul li a {
   text-align: none;
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   margin: 0 0.7375rem;
@@ -19,7 +19,7 @@ header nav ul li a {
 }
 
 header .navbar .barranav {
-  background-color: rgba(40, 119, 119, 0.3);
+  background-color: rgba(40, 119, 119, 0.509);
   position: fixed;
   top: 0;
   padding-bottom: 0.5rem;
@@ -155,7 +155,7 @@ header .navbar .barranav {
 }
 
 .tituloTips, .tituloTipsCurado {
-  color: #4BE225;
+  color: black;
   font-size: 2rem;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -168,7 +168,13 @@ header .navbar .barranav {
   padding-top: 2rem;
 }
 
+.armadoMate, .curadoMate {
+  background: rgba(40, 119, 119, 0.509);
+  border-radius: 2%;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+}
 .armadoMate ol, .curadoMate ol {
+  color: black;
   border-color: yellow;
   text-align: center;
   font-size: 1.5625rem;
