@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     @keyframes animacion {
         0% {background-color: $BackgroundSecundario; left: 0;}
         50%{background-color: #E8E884; left: 0;}
@@ -6,5 +6,15 @@
     }
     .infoMayorista:hover{
         transform: scale(1);
+    }
+    header .navbar .barranav {
+        background-color: rgba(40, 119, 119, 0.963);
+
+    }
+    footer {
+        background-color:  rgba(40, 119, 119, 0.963);
+    }
+    .parrafoFooter {
+        color: map-get($colores, contacto );
     }
 }
