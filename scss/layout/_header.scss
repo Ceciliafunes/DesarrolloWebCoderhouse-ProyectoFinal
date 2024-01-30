@@ -1,7 +1,7 @@
 header {
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         ul {
             display: flex;
@@ -22,6 +22,7 @@ header .navbar .barranav {
     background-color: $BackgroundPrincipal;
     position: fixed;
     top: 0;
+    padding-bottom: 0.5rem;
 }
 
 .navbar li a:hover{
@@ -33,5 +34,10 @@ header .navbar .barranav {
     border-radius: 16.375rem;
     
 }
-
+.btn:hover {
+    background-color: map-get($colores, tit );
+}
+.btn {
+    color: map-get($colores, contacto );
+}
 

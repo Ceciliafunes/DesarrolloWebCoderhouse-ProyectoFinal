@@ -1,7 +1,7 @@
 /*IMPORT UTILITIES*/
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 header nav ul {
@@ -22,6 +22,7 @@ header .navbar .barranav {
   background-color: rgba(40, 119, 119, 0.3);
   position: fixed;
   top: 0;
+  padding-bottom: 0.5rem;
 }
 
 .navbar li a:hover {
@@ -31,6 +32,14 @@ header .navbar .barranav {
 .logo img {
   width: 6rem;
   border-radius: 16.375rem;
+}
+
+.btn:hover {
+  background-color: #2F4858;
+}
+
+.btn {
+  color: white;
 }
 
 /*seccion inicio*/
@@ -122,7 +131,7 @@ header .navbar .barranav {
 
 .contenedorProductos .cards .precio {
   color: #4BE225;
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: bold;
 }
