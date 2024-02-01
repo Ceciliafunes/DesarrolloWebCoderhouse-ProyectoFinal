@@ -216,6 +216,7 @@ header .navbar .barranav {
 
 .infoMayorista:hover {
   transform: scale(1.2);
+  transition: transform 2s;
 }
 
 .mapita {
@@ -254,15 +255,19 @@ header .navbar .barranav {
   text-align: center;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0.9375rem;
+  padding: 1rem;
   text-shadow: 0.125rem 0.125rem 0.3125rem yellow;
 }
 .enviosMayorista .imgcamion {
   padding-left: 1.25rem;
 }
+.enviosMayorista .envios {
+  padding-top: 1.25rem;
+}
 
 .enviosMayorista img {
-  width: 4.252rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .enviosMayorista {
@@ -280,10 +285,29 @@ header .navbar .barranav {
   }
   50% {
     background-color: #E8E884;
-    left: 18.75rem;
+    left: 0;
   }
   100% {
     background-color: #E8FFF3;
+    right: 0;
+  }
+}
+.imgcamion {
+  animation-name: animacioncamion;
+  animation-duration: 3s;
+  position: relative;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacioncamion {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 2.7rem;
+  }
+  100% {
     right: 0;
   }
 }
@@ -386,23 +410,20 @@ footer {
     justify-content: center;
   }
 }
-@media (max-width: 768px) {
-  @keyframes animacion {
+@media (max-width: 992px) {
+  .infoMayorista:hover {
+    transform: scale(1);
+  }
+  @keyframes animacioncamion {
     0% {
-      background-color: #E8FFF3;
       left: 0;
     }
     50% {
-      background-color: #E8E884;
       left: 0;
     }
     100% {
-      background-color: #E8FFF3;
       right: 0;
     }
-  }
-  .infoMayorista:hover {
-    transform: scale(1);
   }
   header .navbar .barranav {
     background-color: rgba(40, 119, 119, 0.963);

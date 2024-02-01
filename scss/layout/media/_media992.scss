@@ -1,12 +1,15 @@
-@media (max-width: 768px) {
-    @keyframes animacion {
-        0% {background-color: $BackgroundSecundario; left: 0;}
-        50%{background-color: #E8E884; left: 0;}
-        100% {background-color: $BackgroundSecundario; right: 0;}
-    }
+@media (max-width: 992px) {
     .infoMayorista:hover{
         transform: scale(1);
     }
+
+    @keyframes animacioncamion {
+        0% {left: 0;}
+        50%{left: 0;}
+        100% {right: 0;}
+    
+    }
+
     header .navbar .barranav {
         background-color: rgba(40, 119, 119, 0.963);
 
