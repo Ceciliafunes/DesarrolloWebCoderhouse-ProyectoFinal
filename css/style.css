@@ -334,7 +334,6 @@ del {
 .enviosMayorista {
   animation-name: animacion;
   animation-duration: 5s;
-  position: relative;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
