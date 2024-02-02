@@ -2,17 +2,8 @@
     .infoMayorista:hover{
         transform: scale(1);
     }
-
-    @keyframes animacioncamion {
-        0% {left: 0;}
-        50%{left: 0;}
-        100% {right: 0;}
-    
-    }
-
     header .navbar .barranav {
         background-color: rgba(40, 119, 119, 0.963);
-
     }
     footer {
         background-color:  rgba(40, 119, 119, 0.963);

@@ -245,7 +245,7 @@ del {
 }
 
 .infoMayorista:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 2s;
 }
 
@@ -313,22 +313,6 @@ del {
     100% {background-color: $BackgroundSecundario; right: 0;}
 
 }
-
-.imgcamion {
-    animation-name: animacioncamion;
-    animation-duration: 3s;
-    position: relative;
-    animation-timing-function: linear;  
-    animation-iteration-count: infinite;
-}
-@keyframes animacioncamion {
-    0% {left: 0;}
-    50%{left: 2.7rem;}
-    100% {right: 0;}
-
-}
-
-
 
 
 /*SECCION CONTACTO*/
