@@ -47,6 +47,63 @@
 
 }
 
+.ProductosDestacados {
+    width: 100%;
+    background: $BackgroundSecundario;
+    display: grid;
+    row-gap: 2.5rem;
+    
+    h3 {
+        text-align: center;
+        color: map-get($colores, nav );
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: map-get($font-sizes, 3 );
+        @include flex (flex, center);
+        font-weight: bold;
+        text-shadow: .3125rem .5rem .75rem #E8E884;
+        text-transform: capitalize;
+    }
+}
+
+.galeriaProductosDest {
+    border-color: #1a4141;
+    padding-bottom: 1.2rem;
+    justify-content: center;
+    row-gap: 1.5rem;
+    
+
+}
+.carDest {
+    box-shadow: .3125rem .5rem .75rem #E8E884 ;
+    width: 18rem;
+
+}
+
+.carDest img  {
+    width: 100%;
+    object-fit: cover;
+}
+.imgcarDest {
+    border-radius: 0.625rem;
+}
+
+.preciocard {
+    font-weight: 700;
+    font-size: map-get($font-sizes, parr );
+
+}
+.btncarrito {
+    background: $BackgroundPrincipal;
+    
+}
+.btncarrito:hover{
+    color: white;
+}
+del {
+    color: lightcoral;
+    font-size: map-get($font-sizes, boton );
+}
+
 /*SECTION PRODUCTOS*/
 
 .productos {
@@ -90,8 +147,9 @@
 
 .contenedorProductos {
     .cards {
+        padding-bottom: 1rem;
         .precio {
-            color: map-get($colores, precioytips );
+            color: map-get($colores, tit );
             font-size: map-get($font-sizes, parr );
             font-style: normal;
             font-weight: bold;
@@ -108,6 +166,8 @@
 .contenedorProductos .precio:hover {
     transform: scale(1.2);
 }
+
+
 /*SECTION TRAMICHITIPS*/
 
 .tramichitips {

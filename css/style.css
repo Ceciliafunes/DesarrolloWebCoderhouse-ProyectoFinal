@@ -89,6 +89,63 @@ header .navbar .barranav {
   font-size: 2rem;
 }
 
+.ProductosDestacados {
+  width: 100%;
+  background: #E8FFF3;
+  display: grid;
+  row-gap: 2.5rem;
+}
+.ProductosDestacados h3 {
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  text-shadow: 0.3125rem 0.5rem 0.75rem #E8E884;
+  text-transform: capitalize;
+}
+
+.galeriaProductosDest {
+  border-color: #1a4141;
+  padding-bottom: 1.2rem;
+  justify-content: center;
+  row-gap: 1.5rem;
+}
+
+.carDest {
+  box-shadow: 0.3125rem 0.5rem 0.75rem #E8E884;
+  width: 18rem;
+}
+
+.carDest img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.imgcarDest {
+  border-radius: 0.625rem;
+}
+
+.preciocard {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.btncarrito {
+  background: rgba(40, 119, 119, 0.509);
+}
+
+.btncarrito:hover {
+  color: white;
+}
+
+del {
+  color: lightcoral;
+  font-size: 1rem;
+}
+
 /*SECTION PRODUCTOS*/
 .productos, .contacto, .mayoristas, .tramichitips {
   color: #2F4858;
@@ -130,8 +187,11 @@ header .navbar .barranav {
   object-fit: cover;
 }
 
+.contenedorProductos .cards {
+  padding-bottom: 1rem;
+}
 .contenedorProductos .cards .precio {
-  color: #4BE225;
+  color: #2F4858;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: bold;
@@ -381,7 +441,7 @@ footer {
 }
 
 .parrafoFooter {
-  color: #208C64;
+  color: rgb(45, 57, 57);
   font-size: 1.575rem;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -397,6 +457,14 @@ footer {
 
 .redes a img {
   width: 1.25rem;
+}
+
+.licencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 1024px) {
