@@ -164,7 +164,7 @@ del {
   width: 100%;
   display: grid;
   column-gap: 1.5125rem;
-  row-gap: 3.5rem;
+  row-gap: 2.5rem;
   padding-top: 1.25rem;
   padding-bottom: 2.25rem;
 }
@@ -179,7 +179,7 @@ del {
 }
 
 .imgProductos {
-  width: 19.5rem;
+  width: 18rem;
   border-radius: 0.625rem;
 }
 .imgProductos img {
